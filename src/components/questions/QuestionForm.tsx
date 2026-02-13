@@ -125,7 +125,7 @@ export default function QuestionForm({ initialData }: QuestionFormProps) {
                             required
                             value={selectedTopic}
                             onChange={(e) => setSelectedTopic(e.target.value)}
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                         >
                             <option value="">Select a Topic</option>
                             {topics.map((topic) => (
@@ -143,7 +143,7 @@ export default function QuestionForm({ initialData }: QuestionFormProps) {
                             value={formData.knowledge_unit_id}
                             onChange={(e) => setFormData({ ...formData, knowledge_unit_id: e.target.value })}
                             disabled={!selectedTopic}
-                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border disabled:bg-gray-100"
+                            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border disabled:bg-gray-100 text-gray-900"
                         >
                             <option value="">Select a Unit</option>
                             {units.map((unit) => (
@@ -162,7 +162,7 @@ export default function QuestionForm({ initialData }: QuestionFormProps) {
                     required
                     value={formData.question_text}
                     onChange={(e) => setFormData({ ...formData, question_text: e.target.value })}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                     rows={2}
                 />
             </div>
@@ -172,7 +172,7 @@ export default function QuestionForm({ initialData }: QuestionFormProps) {
                 <select
                     value={formData.question_type}
                     onChange={(e) => setFormData({ ...formData, question_type: e.target.value })}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 >
                     <option value="single_choice">Single Choice</option>
                     <option value="tap_object">Tap Object</option>
@@ -187,7 +187,7 @@ export default function QuestionForm({ initialData }: QuestionFormProps) {
                     required
                     value={formData.correct_answer}
                     onChange={(e) => setFormData({ ...formData, correct_answer: e.target.value })}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />
             </div>
 
@@ -204,7 +204,7 @@ export default function QuestionForm({ initialData }: QuestionFormProps) {
                             newAnswers[index] = e.target.value;
                             setFormData({ ...formData, incorrect_answers: newAnswers });
                         }}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border mb-2"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border mb-2 text-gray-900"
                     />
                 ))}
             </div>

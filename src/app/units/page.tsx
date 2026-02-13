@@ -64,7 +64,7 @@ export default function UnitsPage() {
     return (
         <div>
             <div className="flex justify-between items-center mb-6">
-                <h1 className="text-3xl font-bold">Knowledge Units</h1>
+                <h1 className="text-3xl font-bold text-gray-900">Knowledge Units</h1>
                 <Link
                     href="/units/new"
                     className="bg-blue-600 text-white px-4 py-2 rounded-md flex items-center hover:bg-blue-700"

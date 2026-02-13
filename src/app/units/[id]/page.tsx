@@ -99,7 +99,7 @@ export default function UnitDetailsPage() {
                 </button>
                 <div className="flex justify-between items-start">
                     <div>
-                        <h1 className="text-3xl font-bold flex items-center">
+                        <h1 className="text-3xl font-bold flex items-center text-gray-900">
                             {unit.thumbnail_url && <img src={unit.thumbnail_url} alt="" className="w-8 h-8 mr-3 rounded" />}
                             {unit.name}
                         </h1>

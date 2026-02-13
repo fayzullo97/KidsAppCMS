@@ -39,7 +39,7 @@ export default function EditQuestionPage() {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold mb-6">Edit Question</h1>
+            <h1 className="text-3xl font-bold mb-6 text-gray-900">Edit Question</h1>
             <QuestionForm initialData={question} />
         </div>
     );

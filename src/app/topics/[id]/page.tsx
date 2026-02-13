@@ -81,7 +81,7 @@ export default function TopicDetailsPage() {
                 </button>
                 <div className="flex justify-between items-start">
                     <div>
-                        <h1 className="text-3xl font-bold flex items-center">
+                        <h1 className="text-3xl font-bold flex items-center text-gray-900">
                             {topic.icon_url && <img src={topic.icon_url} alt="" className="w-8 h-8 mr-3 rounded" />}
                             {topic.name}
                         </h1>

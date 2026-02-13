@@ -75,7 +75,7 @@ export default function TopicForm({ initialData }: TopicFormProps) {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />
             </div>
 
@@ -88,7 +88,7 @@ export default function TopicForm({ initialData }: TopicFormProps) {
                     onChange={(e) =>
                         setFormData({ ...formData, description: e.target.value })
                     }
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                     rows={3}
                 />
             </div>
@@ -103,7 +103,7 @@ export default function TopicForm({ initialData }: TopicFormProps) {
                     onChange={(e) =>
                         setFormData({ ...formData, age_category: e.target.value })
                     }
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />
             </div>
 
@@ -117,7 +117,7 @@ export default function TopicForm({ initialData }: TopicFormProps) {
                     onChange={(e) =>
                         setFormData({ ...formData, icon_url: e.target.value })
                     }
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />
             </div>
 

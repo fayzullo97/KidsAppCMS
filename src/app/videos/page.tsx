@@ -78,7 +78,7 @@ export default function VideosPage() {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold mb-6">Video Management</h1>
+            <h1 className="text-3xl font-bold mb-6 text-gray-900">Video Management</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div>

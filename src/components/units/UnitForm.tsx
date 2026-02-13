@@ -88,7 +88,7 @@ export default function UnitForm({ initialData }: UnitFormProps) {
                         required
                         value={formData.topic_id}
                         onChange={(e) => setFormData({ ...formData, topic_id: e.target.value })}
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                     >
                         <option value="">Select a Topic</option>
                         {topics.map((topic) => (
@@ -107,7 +107,7 @@ export default function UnitForm({ initialData }: UnitFormProps) {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />
             </div>
 
@@ -126,7 +126,7 @@ export default function UnitForm({ initialData }: UnitFormProps) {
                             mastery_threshold: e.target.value === '' ? 0 : parseInt(e.target.value),
                         })
                     }
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />
             </div>
 
@@ -140,7 +140,7 @@ export default function UnitForm({ initialData }: UnitFormProps) {
                     onChange={(e) =>
                         setFormData({ ...formData, thumbnail_url: e.target.value })
                     }
-                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border"
+                    className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />
             </div>
 
