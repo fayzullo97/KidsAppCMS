@@ -1,5 +1,6 @@
 import { supabaseAdmin } from '@/lib/supabase-admin';
 
+export const dynamic = 'force-dynamic';
 export const revalidate = 0; // Ensure dynamic data
 
 export default async function DashboardPage() {
