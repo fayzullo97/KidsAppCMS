@@ -34,9 +34,13 @@ export async function POST(request: Request) {
             { expiresIn: 3600 }
         );
 
+        const r2PublicUrl = process.env.NEXT_PUBLIC_R2_PUBLIC_URL
+            ? `${process.env.NEXT_PUBLIC_R2_PUBLIC_URL}/${uniqueFilename}`
+            : `https://${process.env.R2_BUCKET_NAME}.${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com/${uniqueFilename}`;
+
         return NextResponse.json({
             url: signedUrl,
-            publicUrl: `https://${process.env.R2_BUCKET_NAME}.${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com/${uniqueFilename}`, // Adjust if using a custom domain
+            publicUrl: r2PublicUrl,
             filename: uniqueFilename,
         });
     } catch (error) {
