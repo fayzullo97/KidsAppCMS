@@ -2,7 +2,7 @@ export interface Topic {
     id: string;
     name: string;
     description: string | null;
-    age_category: number | number[] | null;
+    age_range: string | null;
     icon_url: string | null;
     created_at: string;
 }

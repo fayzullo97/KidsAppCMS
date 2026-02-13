@@ -90,9 +90,7 @@ export default function TopicsPage() {
                                     </div>
                                 </td>
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                    {Array.isArray(topic.age_category)
-                                        ? topic.age_category.join(', ')
-                                        : topic.age_category}
+                                    {topic.age_range}
                                 </td>
                                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                     {new Date(topic.created_at).toLocaleDateString()}

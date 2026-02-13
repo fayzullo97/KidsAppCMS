@@ -16,7 +16,7 @@ export default function TopicForm({ initialData }: TopicFormProps) {
     const [formData, setFormData] = useState({
         name: '',
         description: '',
-        age_category: '', // Comma separated for simplicity in this MVP
+        age_range: '', // e.g. "1-4"
         icon_url: '',
     });
 
@@ -25,9 +25,7 @@ export default function TopicForm({ initialData }: TopicFormProps) {
             setFormData({
                 name: initialData.name,
                 description: initialData.description || '',
-                age_category: Array.isArray(initialData.age_category)
-                    ? initialData.age_category.join(', ')
-                    : String(initialData.age_category || ''),
+                age_range: initialData.age_range || '',
                 icon_url: initialData.icon_url || '',
             });
         }
@@ -41,10 +39,7 @@ export default function TopicForm({ initialData }: TopicFormProps) {
             const topicData = {
                 name: formData.name,
                 description: formData.description,
-                age_category: formData.age_category
-                    .split(',')
-                    .map((s) => parseInt(s.trim()))
-                    .filter((n) => !isNaN(n)),
+                age_range: formData.age_range,
                 icon_url: formData.icon_url,
             };
 
@@ -95,13 +90,13 @@ export default function TopicForm({ initialData }: TopicFormProps) {
 
             <div>
                 <label className="block text-sm font-medium text-gray-700">
-                    Age Category (comma separated, e.g. 1, 2)
+                    Age Range (e.g. 1-4)
                 </label>
                 <input
                     type="text"
-                    value={formData.age_category}
+                    value={formData.age_range}
                     onChange={(e) =>
-                        setFormData({ ...formData, age_category: e.target.value })
+                        setFormData({ ...formData, age_range: e.target.value })
                     }
                     className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-2 border text-gray-900"
                 />

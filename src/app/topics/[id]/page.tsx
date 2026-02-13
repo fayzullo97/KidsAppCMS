@@ -87,7 +87,7 @@ export default function TopicDetailsPage() {
                         </h1>
                         <p className="text-gray-500 mt-1">{topic.description}</p>
                         <div className="mt-2 text-sm text-gray-600">
-                            <span className="font-semibold">Age Category:</span> {Array.isArray(topic.age_category) ? topic.age_category.join(', ') : topic.age_category}
+                            <span className="font-semibold">Age Range:</span> {topic.age_range}
                         </div>
                     </div>
                     <Link
