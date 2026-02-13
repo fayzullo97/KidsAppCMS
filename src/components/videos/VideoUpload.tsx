@@ -67,7 +67,6 @@ export default function VideoUpload({
 
             // 3. Save Metadata to Supabase
             const result = await saveVideoMetadata({
-                topic_id: topicId,
                 knowledge_unit_id: knowledgeUnitId,
                 video_url: publicUrl,
                 duration_seconds: 0, // Placeholder

@@ -18,7 +18,6 @@ export interface KnowledgeUnit {
 
 export interface Video {
     id: string;
-    topic_id: string;
     knowledge_unit_id: string;
     video_url: string;
     duration_seconds: number | null;
